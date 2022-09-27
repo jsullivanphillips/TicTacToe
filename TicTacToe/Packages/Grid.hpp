@@ -14,9 +14,10 @@
 
 class Grid{
 public:
-    Gs::GridSquare map [3][3];
+    Gs::GridSquare map[3][3];
     Grid();
     void PrintGrid();
+    int IsWin();
 };
 
 

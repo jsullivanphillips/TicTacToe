@@ -6,9 +6,12 @@
 //
 #include <iostream>
 #include "GridSquare.hpp"
+#define MAX_STATE_VAL 1
+#define MIN_STATE_VAL -1
 using namespace Gs;
 
-bool inRange(unsigned low, unsigned high, unsigned x)
+
+bool inRange(int low, int high, int x)
 {
  return (low <= x && x <= high);
 }
@@ -18,19 +21,19 @@ int GridSquare::GetState(){
 }
 
 void GridSquare::SetState(int x){
-    if(inRange(0,2,x)){
+    if(inRange(MIN_STATE_VAL,MAX_STATE_VAL,x)){
         state = x;
     }else{
-        std::cout << "Error. Out of range state " << x << " entered into GridSquare constructor\n";
+        std::cout << "Error. Out of range state " << x << " entered into GridSquare SetState\n";
     }
 }
 
 void GridSquare::PrintState(){
-    std::cout << GridSquare::state <<"\n";
+    std::cout << GridSquare::state << "\n";
 }
 
 GridSquare::GridSquare(int x){
-    if(inRange(0,2,x)){
+    if(inRange(MIN_STATE_VAL,MAX_STATE_VAL,x)){
         state = x;
     }else{
         std::cout << "Error. Out of range state " << x << " entered into GridSquare constructor\n";

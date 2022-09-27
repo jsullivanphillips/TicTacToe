@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		DA0213C528E2139D00A22579 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA0213C428E2139D00A22579 /* main.cpp */; };
+		DA0213CF28E23E3D00A22579 /* GridSquare.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA0213CD28E23E3D00A22579 /* GridSquare.cpp */; };
+		DA0213D228E2573A00A22579 /* Grid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DA0213D028E2573A00A22579 /* Grid.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		DA0213C128E2139D00A22579 /* TicTacToe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TicTacToe; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0213C428E2139D00A22579 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		DA0213CD28E23E3D00A22579 /* GridSquare.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GridSquare.cpp; sourceTree = "<group>"; };
+		DA0213CE28E23E3D00A22579 /* GridSquare.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GridSquare.hpp; sourceTree = "<group>"; };
+		DA0213D028E2573A00A22579 /* Grid.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Grid.cpp; sourceTree = "<group>"; };
+		DA0213D128E2573A00A22579 /* Grid.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Grid.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,21 @@
 		DA0213C328E2139D00A22579 /* TicTacToe */ = {
 			isa = PBXGroup;
 			children = (
+				DA0213CC28E23E1B00A22579 /* Packages */,
 				DA0213C428E2139D00A22579 /* main.cpp */,
 			);
 			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		DA0213CC28E23E1B00A22579 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				DA0213CD28E23E3D00A22579 /* GridSquare.cpp */,
+				DA0213CE28E23E3D00A22579 /* GridSquare.hpp */,
+				DA0213D028E2573A00A22579 /* Grid.cpp */,
+				DA0213D128E2573A00A22579 /* Grid.hpp */,
+			);
+			path = Packages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA0213D228E2573A00A22579 /* Grid.cpp in Sources */,
+				DA0213CF28E23E3D00A22579 /* GridSquare.cpp in Sources */,
 				DA0213C528E2139D00A22579 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
